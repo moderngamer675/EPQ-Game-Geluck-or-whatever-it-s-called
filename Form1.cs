@@ -32,6 +32,7 @@ namespace Possible_EPQ
             btn_quitButton.Font = new Font("Lucida Sans Unicode", 78, FontStyle.Bold);
         }
 
+
         private void btn_quitButtonLeave(object sender, EventArgs e)
         {
             btn_quitButton.Font = new Font("Lucida Sans Unicode", 72, FontStyle.Bold);
