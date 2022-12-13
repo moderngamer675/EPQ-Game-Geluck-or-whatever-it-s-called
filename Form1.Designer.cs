@@ -39,10 +39,10 @@ namespace Possible_EPQ
             // 
             // btn_playButton
             // 
-            this.btn_playButton.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_playButton.BackColor = System.Drawing.Color.Wheat;
             this.btn_playButton.FlatAppearance.BorderSize = 0;
             this.btn_playButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_playButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_playButton.Font = new System.Drawing.Font("Sylfaen", 72F, System.Drawing.FontStyle.Bold);
             this.btn_playButton.Location = new System.Drawing.Point(132, 299);
             this.btn_playButton.Name = "btn_playButton";
             this.btn_playButton.Size = new System.Drawing.Size(305, 139);
@@ -56,10 +56,10 @@ namespace Possible_EPQ
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 98F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(32, 64);
+            this.label1.Font = new System.Drawing.Font("Sylfaen", 96F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(49, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(504, 160);
+            this.label1.Size = new System.Drawing.Size(450, 166);
             this.label1.TabIndex = 1;
             this.label1.Text = "Geluck";
             // 
@@ -76,10 +76,10 @@ namespace Possible_EPQ
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 13F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(128, 817);
+            this.label3.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(141, 817);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(283, 22);
+            this.label3.Size = new System.Drawing.Size(249, 23);
             this.label3.TabIndex = 3;
             this.label3.Text = "Created By Husnain Shahzad";
             // 
@@ -87,7 +87,7 @@ namespace Possible_EPQ
             // 
             this.btn_quitButton.FlatAppearance.BorderSize = 0;
             this.btn_quitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_quitButton.Font = new System.Drawing.Font("Lucida Sans Unicode", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_quitButton.Font = new System.Drawing.Font("Sylfaen", 72F, System.Drawing.FontStyle.Bold);
             this.btn_quitButton.Location = new System.Drawing.Point(92, 466);
             this.btn_quitButton.Name = "btn_quitButton";
             this.btn_quitButton.Size = new System.Drawing.Size(368, 132);
@@ -102,7 +102,7 @@ namespace Possible_EPQ
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(584, 848);
             this.Controls.Add(this.btn_quitButton);
             this.Controls.Add(this.label3);

@@ -19,23 +19,23 @@ namespace Possible_EPQ
 
         private void btn_playButtonHover(object sender, EventArgs e)
         {
-            btn_playButton.Font = new Font("Lucida Sans Unicode", 78, FontStyle.Bold);
+            btn_playButton.Font = new Font("Sylfaen", 78, FontStyle.Bold);
         }
 
         private void btn_playButtonLeave(object sender, EventArgs e)
         {
-            btn_playButton.Font = new Font("Lucida Sans Unicode", 72, FontStyle.Bold);
+            btn_playButton.Font = new Font("Sylfaen", 72, FontStyle.Bold);
         }
 
         private void btn_quitButtonHover(object sender, EventArgs e)
         {
-            btn_quitButton.Font = new Font("Lucida Sans Unicode", 78, FontStyle.Bold);
+            btn_quitButton.Font = new Font("Sylfaen", 78, FontStyle.Bold);
         }
 
 
         private void btn_quitButtonLeave(object sender, EventArgs e)
         {
-            btn_quitButton.Font = new Font("Lucida Sans Unicode", 72, FontStyle.Bold);
+            btn_quitButton.Font = new Font("Sylfaen", 72, FontStyle.Bold);
         }
 
         private void btn_quitButton_Click(object sender, EventArgs e)

@@ -16,12 +16,16 @@ namespace Possible_EPQ
         bool correctDoorPressed = false;
         bool incorrectDoorPressed = false;
         bool buttonPressed = false;
+
         bool doorOne = false;
         bool doorTwo = false;
         bool doorThree = false;
+
         int counter = 0;
         string answerText;
         string count;
+        Random rnd = new Random();
+
         public GameUI()
         {
             InitializeComponent();
@@ -32,9 +36,44 @@ namespace Possible_EPQ
         private void timerTick_Tick(object sender, EventArgs e)
         {
             int doorNumber = randomDoorSelcter();
+            timerTick.Stop();
             doorNumber = doorNumber + 1;
 
-            answerText = Convert.ToString(doorNumber);
+            double chance = rnd.NextDouble();
+
+            if(doorNumber == 1)
+            {
+                if(chance < 0.5)
+                {
+                    answerText = Convert.ToString(doorNumber + 1);
+                }
+                else
+                {
+                    answerText = Convert.ToString(doorNumber + 2);
+                }
+            }
+            else if(doorNumber == 2)
+            {
+                if (chance < 0.5)
+                {
+                    answerText = Convert.ToString(doorNumber + 1);
+                }
+                else
+                {
+                    answerText = Convert.ToString(doorNumber - 1);
+                }
+            }
+            else
+            {
+                if (chance < 0.5)
+                {
+                    answerText = Convert.ToString(doorNumber - 1);
+                }
+                else
+                {
+                    answerText = Convert.ToString(doorNumber - 2);
+                }
+            }
             tb_answer.Text = answerText;
 
             switch (doorNumber)
@@ -106,6 +145,7 @@ namespace Possible_EPQ
                 tbScore.Text = count;
                 correctDoorPressed = false;
                 buttonPressed = false;
+                timerTick.Start();
             }
             if (incorrectDoorPressed == true)
             {
