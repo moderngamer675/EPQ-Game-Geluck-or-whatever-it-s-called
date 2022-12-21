@@ -39,6 +39,7 @@ namespace Possible_EPQ
             this.timerTick = new System.Windows.Forms.Timer(this.components);
             this.tb_answer = new System.Windows.Forms.TextBox();
             this.btn_answer = new System.Windows.Forms.Button();
+            this.btn_reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbScore
@@ -67,10 +68,10 @@ namespace Possible_EPQ
             // 
             // btn_doorOne
             // 
-            this.btn_doorOne.BackColor = System.Drawing.Color.DarkMagenta;
+            this.btn_doorOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(97)))), ((int)(((byte)(105)))));
             this.btn_doorOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_doorOne.Font = new System.Drawing.Font("Sylfaen", 48F, System.Drawing.FontStyle.Bold);
-            this.btn_doorOne.ForeColor = System.Drawing.Color.Orchid;
+            this.btn_doorOne.ForeColor = System.Drawing.Color.Indigo;
             this.btn_doorOne.Location = new System.Drawing.Point(12, 184);
             this.btn_doorOne.Name = "btn_doorOne";
             this.btn_doorOne.Size = new System.Drawing.Size(162, 379);
@@ -81,10 +82,10 @@ namespace Possible_EPQ
             // 
             // btn_doorTwo
             // 
-            this.btn_doorTwo.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_doorTwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(164)))), ((int)(((byte)(80)))));
             this.btn_doorTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_doorTwo.Font = new System.Drawing.Font("Sylfaen", 48F, System.Drawing.FontStyle.Bold);
-            this.btn_doorTwo.ForeColor = System.Drawing.Color.GreenYellow;
+            this.btn_doorTwo.ForeColor = System.Drawing.Color.ForestGreen;
             this.btn_doorTwo.Location = new System.Drawing.Point(204, 184);
             this.btn_doorTwo.Name = "btn_doorTwo";
             this.btn_doorTwo.Size = new System.Drawing.Size(168, 379);
@@ -95,10 +96,10 @@ namespace Possible_EPQ
             // 
             // btn_doorThree
             // 
-            this.btn_doorThree.BackColor = System.Drawing.Color.Goldenrod;
+            this.btn_doorThree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(101)))), ((int)(((byte)(50)))));
             this.btn_doorThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_doorThree.Font = new System.Drawing.Font("Sylfaen", 48F, System.Drawing.FontStyle.Bold);
-            this.btn_doorThree.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btn_doorThree.ForeColor = System.Drawing.Color.Coral;
             this.btn_doorThree.Location = new System.Drawing.Point(402, 184);
             this.btn_doorThree.Name = "btn_doorThree";
             this.btn_doorThree.Size = new System.Drawing.Size(170, 379);
@@ -117,9 +118,9 @@ namespace Possible_EPQ
             this.tb_answer.BackColor = System.Drawing.Color.Wheat;
             this.tb_answer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_answer.Font = new System.Drawing.Font("Sylfaen", 48F);
-            this.tb_answer.Location = new System.Drawing.Point(237, 689);
+            this.tb_answer.Location = new System.Drawing.Point(267, 671);
             this.tb_answer.Name = "tb_answer";
-            this.tb_answer.Size = new System.Drawing.Size(171, 85);
+            this.tb_answer.Size = new System.Drawing.Size(168, 85);
             this.tb_answer.TabIndex = 8;
             // 
             // btn_answer
@@ -136,12 +137,26 @@ namespace Possible_EPQ
             this.btn_answer.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_showAnswer);
             this.btn_answer.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_hideAnswer);
             // 
+            // btn_reset
+            // 
+            this.btn_reset.BackColor = System.Drawing.Color.Wheat;
+            this.btn_reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_reset.Font = new System.Drawing.Font("Sylfaen", 27.75F, System.Drawing.FontStyle.Bold);
+            this.btn_reset.Location = new System.Drawing.Point(204, 770);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(168, 66);
+            this.btn_reset.TabIndex = 10;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.UseVisualStyleBackColor = false;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            // 
             // GameUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(584, 848);
+            this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.btn_answer);
             this.Controls.Add(this.tb_answer);
             this.Controls.Add(this.btn_doorThree);
@@ -169,5 +184,6 @@ namespace Possible_EPQ
         private System.Windows.Forms.Timer timerTick;
         private System.Windows.Forms.TextBox tb_answer;
         private System.Windows.Forms.Button btn_answer;
+        private System.Windows.Forms.Button btn_reset;
     }
 }

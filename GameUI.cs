@@ -213,5 +213,29 @@ namespace Possible_EPQ
         {
             tb_answer.Visible = false;
         }
+
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            timerTick.Enabled = true;
+            btn_doorOne.Enabled = true;
+            btn_doorTwo.Enabled = true;
+            btn_doorThree.Enabled = true;
+
+            correctDoorPressed = false;
+            incorrectDoorPressed = false;
+            buttonPressed = false;
+
+            doorOne = false;
+            doorTwo = false;
+            doorThree = false;
+
+            tbScore.Text = "0";
+
+            counter = 0;
+            answerText = "0";
+            count = "0";
+
+            timerTick.Start();
+        }
     }
 }
